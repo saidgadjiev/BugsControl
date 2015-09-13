@@ -1,0 +1,9 @@
+c:\users\s.hajiyev\documents\visual studio 2010\Projects\DataWebService\DataWebService\bin\DataWebService.dll
+c:\users\s.hajiyev\documents\visual studio 2010\Projects\DataWebService\DataWebService\bin\DataWebService.pdb
+c:\users\s.hajiyev\documents\visual studio 2010\Projects\DataWebService\DataWebService\obj\Debug\DataWebService.dll
+c:\users\s.hajiyev\documents\visual studio 2010\Projects\DataWebService\DataWebService\obj\Debug\DataWebService.pdb
+C:\Users\Said\Documents\Visual Studio 2010\Projects\DataWebService\DataWebService\bin\DataWebService.dll
+C:\Users\Said\Documents\Visual Studio 2010\Projects\DataWebService\DataWebService\bin\DataWebService.pdb
+C:\Users\Said\Documents\Visual Studio 2010\Projects\DataWebService\DataWebService\obj\Debug\DataWebService.dll
+C:\Users\Said\Documents\Visual Studio 2010\Projects\DataWebService\DataWebService\obj\Debug\DataWebService.pdb
+C:\Users\Said\Documents\Visual Studio 2010\Projects\DataWebService\DataWebService\obj\Debug\DataWebService.csprojResolveAssemblyReference.cache

@@ -1,0 +1,27 @@
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\bin\Debug\Bugs_control.exe.config
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\bin\Debug\Bugs_control.exe
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\bin\Debug\Bugs_control.pdb
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.AddActionForm.resources
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.AtachmentsForm.resources
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.BaseForm.resources
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.GeneralElement.resources
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.Properties.Resources.resources
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.SearchForm.resources
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.TaskForm.resources
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.csproj.GenerateResource.Cache
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.exe
+C:\Users\Said\Documents\Visual Studio 2010\Projects\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.pdb
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\bin\Debug\Bugs_control.exe.config
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.exe
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.pdb
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\bin\Debug\Bugs_control.exe
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\bin\Debug\Bugs_control.pdb
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.csprojResolveAssemblyReference.cache
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.AddActionForm.resources
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.AtachmentsForm.resources
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.BaseForm.resources
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.GeneralElement.resources
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.Properties.Resources.resources
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.SearchForm.resources
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.TaskForm.resources
+C:\Users\Said\Desktop\Bugs_control\Bugs_control\obj\x86\Debug\Bugs_control.csproj.GenerateResource.Cache

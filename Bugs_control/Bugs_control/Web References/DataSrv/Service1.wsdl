@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBranchList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getBranchListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getBranchListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getReasonAppealList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getReasonAppealListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getReasonAppealListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTypeErrorList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getTypeErrorListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getTypeErrorListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPriorityList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getPriorityListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getPriorityListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getStatusList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getStatusListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getStatusListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSystemList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSystemListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getSystemListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSubSystemList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="system_name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSubSystemListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getSubSystemListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFormsList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="subsystem_name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFormsListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getFormsListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSectionFormsList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="forms_name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSectionFormsListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getSectionFormsListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTypeAppealList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getTypeAppealListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getTypeAppealListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createNewTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intItems" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="stringItems" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="createNewTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="createNewTaskResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createNewAtachments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="file" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createNewAtachmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="createNewAtachmentsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="date2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="items" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="searchDataResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createAction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stringItems" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="intItems" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createActionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="createActionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUserListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getUserListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEndAction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEndActionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getEndActionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAtachmentsList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAtachmentsListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getAtachmentsListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteAtachment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="filename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteAtachmentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getActionList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getActionListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getActionListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="loadData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBranchListSoapIn">
+    <wsdl:part name="parameters" element="tns:getBranchList" />
+  </wsdl:message>
+  <wsdl:message name="getBranchListSoapOut">
+    <wsdl:part name="parameters" element="tns:getBranchListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getReasonAppealListSoapIn">
+    <wsdl:part name="parameters" element="tns:getReasonAppealList" />
+  </wsdl:message>
+  <wsdl:message name="getReasonAppealListSoapOut">
+    <wsdl:part name="parameters" element="tns:getReasonAppealListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTypeErrorListSoapIn">
+    <wsdl:part name="parameters" element="tns:getTypeErrorList" />
+  </wsdl:message>
+  <wsdl:message name="getTypeErrorListSoapOut">
+    <wsdl:part name="parameters" element="tns:getTypeErrorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPriorityListSoapIn">
+    <wsdl:part name="parameters" element="tns:getPriorityList" />
+  </wsdl:message>
+  <wsdl:message name="getPriorityListSoapOut">
+    <wsdl:part name="parameters" element="tns:getPriorityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getStatusListSoapIn">
+    <wsdl:part name="parameters" element="tns:getStatusList" />
+  </wsdl:message>
+  <wsdl:message name="getStatusListSoapOut">
+    <wsdl:part name="parameters" element="tns:getStatusListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSystemListSoapIn">
+    <wsdl:part name="parameters" element="tns:getSystemList" />
+  </wsdl:message>
+  <wsdl:message name="getSystemListSoapOut">
+    <wsdl:part name="parameters" element="tns:getSystemListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSubSystemListSoapIn">
+    <wsdl:part name="parameters" element="tns:getSubSystemList" />
+  </wsdl:message>
+  <wsdl:message name="getSubSystemListSoapOut">
+    <wsdl:part name="parameters" element="tns:getSubSystemListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFormsListSoapIn">
+    <wsdl:part name="parameters" element="tns:getFormsList" />
+  </wsdl:message>
+  <wsdl:message name="getFormsListSoapOut">
+    <wsdl:part name="parameters" element="tns:getFormsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSectionFormsListSoapIn">
+    <wsdl:part name="parameters" element="tns:getSectionFormsList" />
+  </wsdl:message>
+  <wsdl:message name="getSectionFormsListSoapOut">
+    <wsdl:part name="parameters" element="tns:getSectionFormsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTypeAppealListSoapIn">
+    <wsdl:part name="parameters" element="tns:getTypeAppealList" />
+  </wsdl:message>
+  <wsdl:message name="getTypeAppealListSoapOut">
+    <wsdl:part name="parameters" element="tns:getTypeAppealListResponse" />
+  </wsdl:message>
+  <wsdl:message name="createNewTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:createNewTask" />
+  </wsdl:message>
+  <wsdl:message name="createNewTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:createNewTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="createNewAtachmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:createNewAtachments" />
+  </wsdl:message>
+  <wsdl:message name="createNewAtachmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:createNewAtachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchDataSoapIn">
+    <wsdl:part name="parameters" element="tns:searchData" />
+  </wsdl:message>
+  <wsdl:message name="searchDataSoapOut">
+    <wsdl:part name="parameters" element="tns:searchDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="createActionSoapIn">
+    <wsdl:part name="parameters" element="tns:createAction" />
+  </wsdl:message>
+  <wsdl:message name="createActionSoapOut">
+    <wsdl:part name="parameters" element="tns:createActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserListSoapIn">
+    <wsdl:part name="parameters" element="tns:getUserList" />
+  </wsdl:message>
+  <wsdl:message name="getUserListSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEndActionSoapIn">
+    <wsdl:part name="parameters" element="tns:getEndAction" />
+  </wsdl:message>
+  <wsdl:message name="getEndActionSoapOut">
+    <wsdl:part name="parameters" element="tns:getEndActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAtachmentsListSoapIn">
+    <wsdl:part name="parameters" element="tns:getAtachmentsList" />
+  </wsdl:message>
+  <wsdl:message name="getAtachmentsListSoapOut">
+    <wsdl:part name="parameters" element="tns:getAtachmentsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteAtachmentSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteAtachment" />
+  </wsdl:message>
+  <wsdl:message name="deleteAtachmentSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteAtachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="getActionListSoapIn">
+    <wsdl:part name="parameters" element="tns:getActionList" />
+  </wsdl:message>
+  <wsdl:message name="getActionListSoapOut">
+    <wsdl:part name="parameters" element="tns:getActionListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBranchList">
+      <wsdl:input message="tns:getBranchListSoapIn" />
+      <wsdl:output message="tns:getBranchListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getReasonAppealList">
+      <wsdl:input message="tns:getReasonAppealListSoapIn" />
+      <wsdl:output message="tns:getReasonAppealListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTypeErrorList">
+      <wsdl:input message="tns:getTypeErrorListSoapIn" />
+      <wsdl:output message="tns:getTypeErrorListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPriorityList">
+      <wsdl:input message="tns:getPriorityListSoapIn" />
+      <wsdl:output message="tns:getPriorityListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getStatusList">
+      <wsdl:input message="tns:getStatusListSoapIn" />
+      <wsdl:output message="tns:getStatusListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSystemList">
+      <wsdl:input message="tns:getSystemListSoapIn" />
+      <wsdl:output message="tns:getSystemListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSubSystemList">
+      <wsdl:input message="tns:getSubSystemListSoapIn" />
+      <wsdl:output message="tns:getSubSystemListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFormsList">
+      <wsdl:input message="tns:getFormsListSoapIn" />
+      <wsdl:output message="tns:getFormsListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSectionFormsList">
+      <wsdl:input message="tns:getSectionFormsListSoapIn" />
+      <wsdl:output message="tns:getSectionFormsListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTypeAppealList">
+      <wsdl:input message="tns:getTypeAppealListSoapIn" />
+      <wsdl:output message="tns:getTypeAppealListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="createNewTask">
+      <wsdl:input message="tns:createNewTaskSoapIn" />
+      <wsdl:output message="tns:createNewTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="createNewAtachments">
+      <wsdl:input message="tns:createNewAtachmentsSoapIn" />
+      <wsdl:output message="tns:createNewAtachmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchData">
+      <wsdl:input message="tns:searchDataSoapIn" />
+      <wsdl:output message="tns:searchDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="createAction">
+      <wsdl:input message="tns:createActionSoapIn" />
+      <wsdl:output message="tns:createActionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserList">
+      <wsdl:input message="tns:getUserListSoapIn" />
+      <wsdl:output message="tns:getUserListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEndAction">
+      <wsdl:input message="tns:getEndActionSoapIn" />
+      <wsdl:output message="tns:getEndActionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAtachmentsList">
+      <wsdl:input message="tns:getAtachmentsListSoapIn" />
+      <wsdl:output message="tns:getAtachmentsListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAtachment">
+      <wsdl:input message="tns:deleteAtachmentSoapIn" />
+      <wsdl:output message="tns:deleteAtachmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getActionList">
+      <wsdl:input message="tns:getActionListSoapIn" />
+      <wsdl:output message="tns:getActionListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBranchList">
+      <soap:operation soapAction="http://tempuri.org/getBranchList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReasonAppealList">
+      <soap:operation soapAction="http://tempuri.org/getReasonAppealList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTypeErrorList">
+      <soap:operation soapAction="http://tempuri.org/getTypeErrorList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPriorityList">
+      <soap:operation soapAction="http://tempuri.org/getPriorityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStatusList">
+      <soap:operation soapAction="http://tempuri.org/getStatusList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSystemList">
+      <soap:operation soapAction="http://tempuri.org/getSystemList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubSystemList">
+      <soap:operation soapAction="http://tempuri.org/getSubSystemList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFormsList">
+      <soap:operation soapAction="http://tempuri.org/getFormsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSectionFormsList">
+      <soap:operation soapAction="http://tempuri.org/getSectionFormsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTypeAppealList">
+      <soap:operation soapAction="http://tempuri.org/getTypeAppealList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createNewTask">
+      <soap:operation soapAction="http://tempuri.org/createNewTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createNewAtachments">
+      <soap:operation soapAction="http://tempuri.org/createNewAtachments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchData">
+      <soap:operation soapAction="http://tempuri.org/searchData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createAction">
+      <soap:operation soapAction="http://tempuri.org/createAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserList">
+      <soap:operation soapAction="http://tempuri.org/getUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEndAction">
+      <soap:operation soapAction="http://tempuri.org/getEndAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAtachmentsList">
+      <soap:operation soapAction="http://tempuri.org/getAtachmentsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAtachment">
+      <soap:operation soapAction="http://tempuri.org/deleteAtachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActionList">
+      <soap:operation soapAction="http://tempuri.org/getActionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBranchList">
+      <soap12:operation soapAction="http://tempuri.org/getBranchList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReasonAppealList">
+      <soap12:operation soapAction="http://tempuri.org/getReasonAppealList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTypeErrorList">
+      <soap12:operation soapAction="http://tempuri.org/getTypeErrorList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPriorityList">
+      <soap12:operation soapAction="http://tempuri.org/getPriorityList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStatusList">
+      <soap12:operation soapAction="http://tempuri.org/getStatusList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSystemList">
+      <soap12:operation soapAction="http://tempuri.org/getSystemList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubSystemList">
+      <soap12:operation soapAction="http://tempuri.org/getSubSystemList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFormsList">
+      <soap12:operation soapAction="http://tempuri.org/getFormsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSectionFormsList">
+      <soap12:operation soapAction="http://tempuri.org/getSectionFormsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTypeAppealList">
+      <soap12:operation soapAction="http://tempuri.org/getTypeAppealList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createNewTask">
+      <soap12:operation soapAction="http://tempuri.org/createNewTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createNewAtachments">
+      <soap12:operation soapAction="http://tempuri.org/createNewAtachments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchData">
+      <soap12:operation soapAction="http://tempuri.org/searchData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createAction">
+      <soap12:operation soapAction="http://tempuri.org/createAction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserList">
+      <soap12:operation soapAction="http://tempuri.org/getUserList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEndAction">
+      <soap12:operation soapAction="http://tempuri.org/getEndAction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAtachmentsList">
+      <soap12:operation soapAction="http://tempuri.org/getAtachmentsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAtachment">
+      <soap12:operation soapAction="http://tempuri.org/deleteAtachment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActionList">
+      <soap12:operation soapAction="http://tempuri.org/getActionList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://localhost:52240/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://localhost:52240/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
